@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/style.css">
+    
+
+    <title>Calculadora IMC</title>
 </head>
 
 <body>
@@ -17,58 +19,68 @@
         <br>
 
         <div class="row">
-            <div class="col-sm-3">
-                <h1>UFG</h1>
+
+            <div class="col-6 col-md-4">
+                    <img src="images/UFG_logo.svg">
             </div>
-        
-            <div class="col-sm-3">
+
+            <div class="col-12 col-md-8">
                 <h2>Programação para
                     <span class="badge badge-secondary">WEB</span>
                 </h2>
             </div>
+
         </div>
 
+        <br>
+
+
+        <h4 class="col-md-3 col-md-offset-4" style="margin: auto;">Calculadora do IMC</h4>
+        <hr>
 
         <div class="row">
             <div class="col-md-3 col-md-offset-4" style="margin: auto;">
-                <div class="col-md-12 ml-auto mr-auto">
 
-                    <div class="form-group">
-                        <label for="idade">Idade</label>
-                        <input type="number" class="form-control" id="idade" placeholder="21">
-                        <small id="emailHelp" class="form-text text-muted">Digite apenas números.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="altura">Altura</label>
-                        <input type="number" class="form-control" id="altura" placeholder="1,74">
-                        <small id="emailHelp" class="form-text text-muted">Digite apenas números.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="peso">Peso</label>
-                        <input type="number" class="form-control" id="peso" placeholder="74">
-                        <small id="emailHelp" class="form-text text-muted">Digite apenas números.</small>
-                    </div>
 
-                    <button class="btn btn-primary btn-block" style="cursor: pointer" id="calcular" onclick="calcularImc()">Calcular</button>
-
+                <div class="form-group">
+                    <label for="idade">Idade</label>
+                    <input type="number" class="form-control" id="idade" placeholder="21">
+                    <small id="emailHelp" class="form-text text-muted">Digite apenas números.</small>
                 </div>
+                <div class="form-group">
+                    <label for="altura">Altura</label>
+                    <input type="number" class="form-control" id="altura" placeholder="1,74">
+                    <small id="emailHelp" class="form-text text-muted">Digite apenas números.</small>
+                </div>
+                <div class="form-group">
+                    <label for="peso">Peso</label>
+                    <input type="number" class="form-control" id="peso" placeholder="74">
+                    <small id="emailHelp" class="form-text text-muted">Digite apenas números.</small>
+                </div>
+
+
+                <button type="button" class="btn btn-primary btn-block" id="calcularImc" onclick="calcularImc()">Calcular</button>
+
+                <br>
+
+                <p id="imcTotal"/>
+
             </div>
         </div>
-
-
 
 
     </div>
 
 
 
-
+    <script src="js/imc.js">  </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+    
 
 </body>
 
